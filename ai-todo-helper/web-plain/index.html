@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- (No changes to head section) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Planning Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Planning Assistant</h1>
+            <p>Describe your goal and a timeline (e.g., "Learn music in 4 weeks"), pick a start date, and let AI build your plan.</p>
+        </header>
+
+        <form id="goal-form">
+            <input type="text" id="goal-input" placeholder="What is your goal? (e.g., Learn ai in 6 months)" required autocomplete="off">
+            <!-- New Date Picker Input -->
+            <div class="date-picker-wrapper">
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" required>
+            </div>
+            <button type="submit" id="submit-btn">
+                <span class="btn-text">Generate Plan</span>
+                <div class="spinner hidden"></div>
+            </button>
+        </form>
+
+        <main class="main-content">
+            <section id="goals-list-container" class="panel">
+                <h2>My Goals</h2>
+                <div id="goals-list"></div>
+            </section>
+            <section id="goal-details-container" class="panel">
+                <h2>Action Plan</h2>
+                <div id="goal-details"></div>
+            </section>
+        </main>
+    </div>
+    <!-- (SVG icons remain the same) -->
+    <svg width="0" height="0" style="position:absolute"><symbol id="icon-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></symbol></svg>
+    <script src="app.js"></script>
+</body>
+</html>
