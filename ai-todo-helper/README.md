@@ -2,7 +2,7 @@
 
 AI To-Do Helper is a web application designed to help users create intelligent and actionable plans for their goals using AI.
 
-![Active Screenshot](.active.png)
+![Active Screenshot](./active.png)
 
 ## Frameworks Used
 
