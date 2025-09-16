@@ -55,3 +55,17 @@ AI To-Do Helper is a web application designed to help users create intelligent a
    ```bash
    docker build -t ai-todo-helper .
    ```
+
+## APIs and Endpoints
+
+### Goals
+- **GET /api/goals**: Retrieve all goals.
+- **POST /api/goals**: Create a new goal. Requires `title` and `start_date` in the request body.
+- **GET /api/goals/{goal_id}**: Retrieve details of a specific goal.
+- **DELETE /api/goals/{goal_id}**: Delete a specific goal.
+
+### Tasks
+- **PATCH /api/tasks/{task_id}/toggle**: Toggle the completion status of a task.
+
+### Error Handling
+- All endpoints return appropriate HTTP status codes and detailed error messages for invalid requests.
