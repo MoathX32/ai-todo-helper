@@ -11,21 +11,7 @@ AI To-Do Helper is a web application designed to help users create intelligent a
 - **Database**: SQLite for lightweight, persistent storage of goals and tasks.
 - **Frontend**: A clean, responsive frontend built with vanilla JavaScript, HTML, and CSS, demonstrating core web principles without a framework.
 
-## Features
-
-### Backend Features
-- **AI-Powered Plan Generation**: Generates detailed, actionable plans for user-defined goals using the Google Gemini API.
-- **Plan Validation**: Includes a unique AI-powered validation step to ensure the generated plans are logical and relevant to the user's goal.
-- **Database Integration**: Stores goals and tasks in a SQLite database for lightweight, persistent storage.
-- **RESTful API**: Provides endpoints for creating, retrieving, updating, and deleting goals and tasks.
-
-### Frontend Features
-- **Interactive Goal Management**: Allows users to create, view, and delete goals.
-- **Task Completion Tracking**: Users can mark tasks as completed, and progress is visually represented.
-- **Floating Messages**: Displays feedback directly on the webpage for better user experience.
-- **Responsive Design**: A clean, responsive frontend built with vanilla JavaScript, HTML, and CSS, demonstrating core web principles without a framework.
-
-### Additional Features
+## Additional Features
 - **Error Handling**: Provides clear and actionable error messages when inputs are invalid or plans cannot be generated.
 - **Customizable UI**: Includes modern CSS styling for an intuitive and visually appealing interface.
 
